@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class BasicSelenium {
 
 	public static void main(String[] args) {
-	ChromeDriver driver=new ChromeDriver();
+	WebDriver driver=new ChromeDriver();
 	//open browser
 	driver.get("https://www.facebook.com/");
 	driver.manage().window().maximize();
@@ -18,8 +18,8 @@ public class BasicSelenium {
 	String url =driver.getCurrentUrl();
 	System.out.println(url);
 	//check pagesource code
-	String html=driver.getPageSource();
-	System.out.println(html);
+	//String html=driver.getPageSource();
+	//System.out.println(html);
 
 	}
 
